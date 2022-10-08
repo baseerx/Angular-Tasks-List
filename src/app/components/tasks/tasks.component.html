@@ -1,0 +1,17 @@
+
+
+<ul class="list-group m-2">
+    <li class="list-group-item">
+        <div class="row">
+            <div class="col-4">
+                {{task?.task}}
+            </div>
+            <div class="col-4">
+                {{task?.done}}
+            </div>
+            <div class="col-4">
+                <fa-icon [icon]="faTimes" (click)="deleteMe(task?.id)"></fa-icon>
+            </div>
+        </div>
+    </li>
+</ul>
