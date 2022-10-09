@@ -9,7 +9,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 })
 export class TasksComponent implements OnInit {
    @Input() task?: Datainterface;
-   
+   @Input() deleteColor?: string;
    @Output() btnDelete=new EventEmitter<any>();
 
    faTimes=faTimes;

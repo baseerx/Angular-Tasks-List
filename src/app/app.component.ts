@@ -10,7 +10,9 @@ export class AppComponent {
   title = 'Testing';
   tasks:Datainterface[] = []
   constructor(private tasksService:TasksService) {
-    this.tasks = tasksService.getTasks();
+    this.tasksService.getTasks().subscribe((tasks) => {
+      this.tasks = tasks;
+    })
   }
   deleteTask=(id:any):void=>{
     console.log("delete task"+id);

@@ -3,5 +3,5 @@
     <app-header></app-header>
 
   </div>
-    <app-tasks *ngFor="let task of tasks" [task]="task" (btnDelete)="deleteTask($event)"></app-tasks>
+    <app-tasks *ngFor="let task of tasks" [task]="task" deleteColor="red" (btnDelete)="deleteTask($event)"></app-tasks>
 </div>

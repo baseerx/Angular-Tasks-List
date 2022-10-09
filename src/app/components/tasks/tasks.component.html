@@ -10,7 +10,7 @@
                 {{task?.done}}
             </div>
             <div class="col-4">
-                <fa-icon [icon]="faTimes" (click)="deleteMe(task?.id)"></fa-icon>
+                <fa-icon [icon]="faTimes" [ngStyle]="{color:deleteColor}" (click)="deleteMe(task?.id)"></fa-icon>
             </div>
         </div>
     </li>
